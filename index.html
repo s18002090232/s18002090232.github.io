@@ -4,7 +4,13 @@
     </head>
     
 <body>
-        <script>
+<h1>我叫<span id="myname"></span></h1>
+    <p>我的学号是<span id="mynumber"></span>
+        <button id="bin">下一个</button>
+        <img src="matrix1.png"/>   
+        <img id="logo" src="logo.jpg" style="border-radius:10px 20px 30px 40px"/>
+    </p>
+ <script>
         $(function(){
             $.get("./data.json",function(result){
                 $("#myname").text(result.myname);
@@ -21,12 +27,5 @@
             })
             })
     </script>
-<h1>我叫<span id="myname"></span></h1>
-    <p>我的学号是<span id="mynumber"></span>
-        <button id="bin">下一个</button>
-        <img src="matrix1.png"/>   
-        <img id="logo" src="logo.jpg" style="border-radius:10px 20px 30px 40px"/>
-    </p>
-
 </body>
 </html>
