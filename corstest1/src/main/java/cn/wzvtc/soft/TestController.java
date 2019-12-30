@@ -27,7 +27,7 @@ public class TestController {
     }
 
     @RequestMapping(value = "/lvlilist")
-    public List<Lvli> addlvli() {
+    public List<Lvli> getlvlilist() {
 
        return this.lvliRepository.findAll();
     }
